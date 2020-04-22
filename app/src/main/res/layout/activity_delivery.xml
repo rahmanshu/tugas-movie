@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+        <include layout="@layout/toolbar_title_center" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llSignatureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space"
+        android:layout_below="@+id/appBar"
+        android:orientation="vertical">
+
+        <!--new-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space"
+            android:layout_marginLeft="@dimen/space"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_driver"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_marginTop="@dimen/space"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_boy" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/space"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+
+
+                            </LinearLayout>
+
+
+
+                            <TextView
+                                android:id="@+id/tv_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/grey_600"
+                                android:textSize="@dimen/font_reg"
+                                android:text="Asep Surahman"
+                                android:drawableLeft="@drawable/ic_user_grey_16"
+                                android:drawablePadding="@dimen/space"
+                                android:layout_marginBottom="@dimen/space"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/grey_600"
+                                android:textSize="@dimen/font_reg"
+                                android:text="085776758221"
+                                android:drawableLeft="@drawable/ic_call_grey_16"
+                                android:drawablePadding="@dimen/space"
+                                android:layout_marginBottom="@dimen/space"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/grey_600"
+                                android:textSize="@dimen/font_reg"
+                                android:text="rahmanshu7@gmail.com"
+                                android:drawableLeft="@drawable/ic_message_grey_16"
+                                android:drawablePadding="@dimen/space"
+                                android:layout_marginBottom="@dimen/space_half"
+                                />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+        <!--end-->
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space"
+            android:layout_marginLeft="@dimen/space"
+            android:layout_marginTop="@dimen/space"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvTitleDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Address"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_marginTop="@dimen/space"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jl Raya Muara Gembong Kab. Bekasi Desa Pantai Mekar "
+                    android:textColor="@color/grey_600"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_marginRight="@dimen/space"
+                    android:layout_marginBottom="@dimen/space"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

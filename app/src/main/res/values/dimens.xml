@@ -1,0 +1,89 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <!--MARGIN & PADDING-->
+    <dimen name="space_quarter">2dp</dimen>
+    <dimen name="space_half">4dp</dimen>
+    <!--<dimen name="space">8dp</dimen>-->
+    <dimen name="space">@dimen/_8sdp</dimen>
+    <dimen name="spacehalf_half">@dimen/_12sdp</dimen>
+    <dimen name="space_double">@dimen/_15sdp</dimen>
+    <dimen name="space_triple">24dp</dimen>
+    <dimen name="space_quadruple">32dp</dimen>
+    <dimen name="space_xtra">48dp</dimen>
+    <dimen name="space_xtra_minus">-48dp</dimen>
+    <dimen name="space_quadruple_minus">-32dp</dimen>
+    <dimen name="space_double_minus">-13dp</dimen>
+
+    <!--Width Image-->
+    <dimen name="extra_small_width">30dp</dimen>
+    <dimen name="small_width">45dp</dimen>
+    <dimen name="medium_width">75dp</dimen>
+    <dimen name="large_width">@dimen/_100sdp</dimen>
+    <dimen name="extra_large_width">@dimen/_250sdp</dimen>
+
+    <!--Height Image-->
+    <dimen name="extra_small_heightg">30dp</dimen>
+    <dimen name="small_height">45dp</dimen>
+    <dimen name="medium_height">75dp</dimen>
+    <dimen name="large_height">@dimen/_100sdp</dimen>
+    <dimen name="extra_large_height">@dimen/_250sdp</dimen>
+
+    <!--RADIUS-->
+    <dimen name="radius">7dp</dimen>
+    <item name="glow_radius_med" type="dimen">7000%p</item>
+    <item name="glow_radius_max" type="dimen">7000%p</item>
+
+    <!--RADIUS Oval-->
+    <dimen name="radius_oval">72dp</dimen>
+    <item name="glow_radius_oval_med" type="dimen">7000%p</item>
+    <item name="glow_radius_oval_max" type="dimen">7000%p</item>
+
+    <!--FONT-->
+    <dimen name="font_tiny">10sp</dimen>
+    <dimen name="font_xs">@dimen/_7sdp</dimen>
+    <dimen name="font_small">@dimen/_10sdp</dimen>
+    <dimen name="font_reg">@dimen/_12sdp</dimen>
+    <dimen name="font_medium">@dimen/_14sdp</dimen>
+    <dimen name="font_large">@dimen/_16sdp</dimen>
+    <dimen name="font_big">@dimen/_18sdp</dimen>
+    <dimen name="font_xbig">@dimen/_22sdp</dimen>
+    <dimen name="font_xxbig">@dimen/_26sdp</dimen>
+
+    <!--Card View-->
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+
+    <dimen name="nav_drawer_width">300dp</dimen>
+    <dimen name="nav_drawer_header_height">200dp</dimen>
+    <dimen name="layout_margin_default">10dp</dimen>
+    <dimen name="layout_padding_default">10dp</dimen>
+
+    <!--FAB-->
+    <dimen name="parent_action_button_size">108dp</dimen>
+    <dimen name="parent_action_button_margin">0dp</dimen>
+    <dimen name="parent_action_button_content_size">52dp</dimen>
+    <dimen name="parent_action_button_content_margin">0dp</dimen>
+    <dimen name="parent_action_menu_radius">96dp</dimen>
+    <dimen name="sub_action_button_size">48dp</dimen>
+    <dimen name="sub_action_button_content_margin">16dp</dimen>
+
+    <dimen name="navigation_top_bar_height">200dp</dimen>
+
+
+    <!-- dimensions -->
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+
+</resources>

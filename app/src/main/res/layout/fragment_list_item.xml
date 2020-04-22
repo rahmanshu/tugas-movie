@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/lnProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/pbLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lnConnectionError"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/grey_400"
+                    android:src="@drawable/ic_error"/>
+
+                <TextView
+                    android:id="@+id/tvConnection"
+                    android:textSize="@dimen/font_medium"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connection_error" />
+
+                <TextView
+                    android:id="@+id/tvTryAgain"
+                    android:layout_marginTop="@dimen/space"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/try_again" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--new-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search By"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_reg"
+                android:layout_marginBottom="@dimen/space_half"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:id="@+id/sSearch"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/search_type"
+                    android:focusable="false"
+                    android:spinnerMode="dialog"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    />
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/bg_round_green"
+                    android:padding="@dimen/_2sdp"
+                    android:maxLength="18"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:textSize="@dimen/_12ssp"
+                android:background="@drawable/button_primary"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:text="SEARCH" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lnDismissBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llBox"
+            >
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_container"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    style="@style/GenericRecyclerViewStyle"
+                    android:padding="@dimen/space" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--end-->
+
+</RelativeLayout>

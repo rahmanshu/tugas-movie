@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/space_half">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_double"
+        android:layout_marginRight="@dimen/space_double"
+        android:layout_marginTop="@dimen/space"
+        android:contentDescription="@string/movie"
+        android:src="@drawable/ic_shopping_cart_white_24dp" />
+
+    <TextView
+        android:id="@+id/notif_count"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:background="@drawable/bg_red_oval"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white" />
+
+
+</FrameLayout>

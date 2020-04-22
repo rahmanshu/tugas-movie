@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="success_code">0</integer>
+    <integer name="failure_code">50</integer>
+    <integer name="success_activication_code">1</integer>
+</resources>

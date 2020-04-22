@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">My mOVEie</string>
+
+    <string name="navigation_drawer_open">Buka navigasi drawer</string>
+    <string name="navigation_drawer_close">Tutup navigasi drawer</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="title_activity_login">Masuk</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Kata sandi</string>
+    <string name="action_sign_in">Masuk atau Daftar</string>
+    <string name="action_sign_in_short">Masuk</string>
+    <string name="error_invalid_email">Email tidak valid</string>
+    <string name="error_invalid_password">Kata sandi terlalu pendek</string>
+    <string name="error_incorrect_password">Kata sandi tidak benar</string>
+    <string name="error_field_required">Field dibutuhkan</string>
+    <string name="permission_rationale">"Izin kontak diperlukan untuk memberikan penyelesaian email."</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <!--new-->
+    <string name="loading">Loading&#8230;</string>
+    <string name="connection_error">Terjadi kesalahan koneksi</string>
+    <string name="expired_session">Sesi Anda telah berakhir, mohon log in kembali</string>
+    <string name="failed">Gagal</string>
+    <string name="ok">OK</string>
+    <string name="logout">Keluar</string>
+    <string name="connection_error_swipe">Kesalahan Koneksi. Tarik ke bawah untuk mengulang</string>
+    <string name="no_data">Tidak ada data</string>
+    <string name="infortmation">Informasi</string>
+    <string name="success">Sukses</string>
+    <string name="home">Home</string>
+    <string name="movie">Movie</string>
+    <string name="favorite">My Favorit</string>
+    <string name="payment_confirm">Konfirmasi</string>
+    <string name="account">Akun</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="create_account">Tidak memiliki akun? Daftar</string>
+    <string name="user_location_permission_explanation">PENJELASAN DISINI</string>
+    <string name="user_location_permission_not_granted">USER DIIJINKAN</string>
+    <string name="new_location">NEW LOCATION</string>
+    <string name="line_distance_textview">JARAK</string>
+    <string name="try_again">Coba kembali</string>
+
+</resources>

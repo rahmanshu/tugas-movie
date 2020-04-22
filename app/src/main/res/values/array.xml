@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dummy_array"></string-array>
+
+    <string-array name="preferred_mailing_address">
+        <item>Email</item>
+    </string-array>
+
+    <string-array name="salutation">
+        <item>MR</item>
+        <item>MRS</item>
+        <item>MS</item>
+    </string-array>
+
+    <string-array name="payment">
+        <item>Choose Payment Method</item>
+        <item>Transfer</item>
+        <item>Wallet</item>
+    </string-array>
+
+    <string-array name="choose">
+        <item></item>
+    </string-array>
+
+    <string-array name="reminder_interval">
+        <item>Mingguan</item>
+        <item>Bulanan</item>
+    </string-array>
+
+    <string-array name="change_picture">
+        <item>Take Photo</item>
+        <item>From Gallery</item>
+    </string-array>
+
+    <string-array name="trx_history">
+        <item>Semua</item>
+        <item>Subscription</item>
+        <item>Penjualan Kembali</item>
+        <item>Top Up</item>
+        <item>Top Auto</item>
+    </string-array>
+
+    <string-array name="trx_history_period">
+        <item>1 Bulan</item>
+        <item>2 Bulan</item>
+        <item>3 Bulan</item>
+        <item>4 Bulan</item>
+        <item>5 Bulan</item>
+        <item>6 Bulan</item>
+    </string-array>
+
+    <string-array name="search_type">
+        <item>Title</item>
+        <item>Year</item>
+        <item>ImdbID</item>
+    </string-array>
+
+    <string-array name="topup_bank">
+        <item>Semua</item>
+        <item>Bank BCA</item>
+        <item>Bank Mandiri</item>
+    </string-array>
+
+    <string-array name="topup_status">
+        <item>Semua</item>
+        <item>Menunggu Pembayaran</item>
+        <item>Telah Dibayar</item>
+        <item>Selesai</item>
+        <item>Batal</item>
+    </string-array>
+
+
+</resources>

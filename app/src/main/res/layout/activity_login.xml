@@ -1,0 +1,161 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_login_gradient"
+    android:id="@+id/login_layout">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+        <include layout="@layout/toolbar_title_center" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:layout_marginTop="@dimen/space_double"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@mipmap/ic_movie"
+            android:layout_gravity="center"
+            />
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_email"
+            style="@style/TextAppearance.App.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_password"
+            style="@style/TextAppearance.App.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/tv_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                app:backgroundTint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_double"
+            android:background="@drawable/button_primary"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:textColorLink="@color/blue_300"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space"
+            android:padding="5dp"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textColorLink="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_background_"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+        <include layout="@layout/toolbar_title_center" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+-->

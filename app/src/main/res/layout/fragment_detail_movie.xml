@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white">
+
+    <!--loading-->
+    <LinearLayout
+        android:id="@+id/lnProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/lnConnectionError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_error"
+                    android:tint="@color/grey_400" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/connection_error"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/tvTryAgain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space"
+                    android:gravity="center"
+                    android:text="@string/try_again"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--end loading-->
+
+    <RelativeLayout
+        android:id="@+id/lnDismissBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_double">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space"
+                android:layout_marginTop="@dimen/space"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tvRated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:background="@drawable/button_primary"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:text="Rated"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRelease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textColor="@color/grey_700"
+                    android:textSize="@dimen/font_reg"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_marginRight="@dimen/space"
+                android:layout_marginTop="@dimen/space"
+                android:background="@color/grey_400">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnTitle"
+            android:padding="@dimen/space">
+
+            <ImageView
+                android:id="@+id/ivDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tvDesc"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="@dimen/space"
+                android:layout_marginLeft="@dimen/space_double"
+                android:layout_marginRight="@dimen/space_double"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_above="@+id/lnBtn"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="Description"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/grey_700"
+                >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/lnBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical|bottom"
+                android:layout_margin="@dimen/space"
+                android:gravity="center|bottom"
+                android:padding="@dimen/space">
+
+                <Button
+                    android:id="@+id/btnFav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_primary"
+                    android:text="My Favorite"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
